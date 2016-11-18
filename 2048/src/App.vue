@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
+    <a href="http://codepen.io/camsong/pen/wcKrg">2048</a>
     <hello></hello>
   </div>
 </template>
