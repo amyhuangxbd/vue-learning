@@ -3,6 +3,8 @@
     <img src="./assets/logo.png">
     <a href="http://codepen.io/camsong/pen/wcKrg">2048</a>
     <hello></hello>
+    <div> git commit -m "Add 2048"</div>
+    <div>git push -u origin master</div>
   </div>
 </template>
 
@@ -17,7 +19,8 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+$field-width: 500px;
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

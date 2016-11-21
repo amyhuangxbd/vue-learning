@@ -9,6 +9,8 @@ var env = process.env.NODE_ENV
 var cssSourceMapDev = (env === 'development' && config.dev.cssSourceMap)
 var cssSourceMapProd = (env === 'production' && config.build.productionSourceMap)
 var useCssSourceMap = cssSourceMapDev || cssSourceMapProd
+var HtmlWebpackPlugin = require('html-webpack-plugin')
+var Px2remWebpackPlugin = require('px2rem-webpack-plugin')
 
 module.exports = {
   entry: {
@@ -90,5 +92,9 @@ module.exports = {
         browsers: ['last 2 versions']
       })
     ]
-  }
+  },
+  plugins: [
+    new HtmlWebpackPlugin(),
+    new Px2remWebpackPlugin({originScreenWidth: 750, border:true}),
+  ]
 }
